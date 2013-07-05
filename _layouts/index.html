@@ -63,14 +63,14 @@ layout: default
     </div>      
     <div class="col-last">
         <div class="ption">
-            <span><h3>熊猫吃货</h3>共有{{ site.categories.chihuo | size }}篇</span>
-            <span style="float:right;margin-right:10px;" ><a href="{{site.baseurl}}/chihuo" rel="bookmark" title="更多[熊猫吃货]的文章">更  多</a></span>       
+            <span><h3>Git</h3>共有{{ site.categories.git | size }}篇</span>
+            <span style="float:right;margin-right:10px;" ><a href="{{site.baseurl}}/git" rel="bookmark" title="更多[Git]的文章">更  多</a></span>       
             <!--
             <span class="archive_more"><a href="/itnews" rel="bookmark" title="更多[IT资讯]的文章">更  多</a></span>
             -->
         </div>
         <ul class="ul-list nomb">
-            {% for post in site.categories.chihuo limit:10 %}
+            {% for post in site.categories.git limit:10 %}
             <li><span class="date">
                 [ <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%m/%d" }}</time> ]</span> 
             {% if post.short_title %}
