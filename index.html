@@ -3,8 +3,13 @@ layout: default
 title:  Gaolei
 ---
 <div id="blogindex">
- 
-
+  阅读文献：
+  <ul class = "posts">
+    <li> <a href = "https://reserverisk.github.io/article/1.pdf>Reserving risk </a></li>
+	</ul>
+	
+	<hr>
+  讨论笔记：
   <ul class="posts">
     {% for post in site.categories.note  %}
       <li>
@@ -13,6 +18,8 @@ title:  Gaolei
       </li>
     {% endfor %}
   </ul>
+  <HR>
+  一些总结：
     <ul class="posts">
     {% for post in site.categories.result  %}
       <li>
