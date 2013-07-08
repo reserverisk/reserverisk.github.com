@@ -1,7 +1,11 @@
 <h3>{{ page.title }}</h3>
-<p class="small">{{ page.date | date: '%d %B, %Y' }}</p>
+<p class="small">{{ page.date | date: '%d %B, %Y' }}      {% if page.author != null %}
+      By {{ page.author }} &nbsp;
+      {% else %}
+      By GaoLei
+      {% endif %}</p>
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=default"></script>
-<div ><font size = 5>
+<div id = "content"><font size = 5>
 	{{ content }}
 </font>
 </div>
